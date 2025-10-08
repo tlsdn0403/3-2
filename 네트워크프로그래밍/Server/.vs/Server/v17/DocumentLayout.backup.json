@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\",
+  "WorkspaceRootPath": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\HomeWorkFileReciver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:HomeWorkFileReciver.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:FixedVariable_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework3_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:Homework3_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:TCPServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:TCPClient.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Practive_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:Practive_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,66 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Practive_4.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Practive_4.cpp",
+              "RelativeDocumentMoniker": "Practive_4.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Practive_4.cpp",
+              "RelativeToolTip": "Practive_4.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-08T12:38:35.495Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeWorkFileReciver.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\HomeWorkFileReciver.cpp",
-              "RelativeDocumentMoniker": "HomeWorkFileReciver.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\HomeWorkFileReciver.cpp",
-              "RelativeToolTip": "HomeWorkFileReciver.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Title": "FixedVariable_Server.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "RelativeDocumentMoniker": "FixedVariable_Server.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "RelativeToolTip": "FixedVariable_Server.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvxEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-08T08:55:06.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TCPClient.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPClient.cpp",
-              "RelativeDocumentMoniker": "TCPClient.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPClient.cpp",
-              "RelativeToolTip": "TCPClient.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-08T08:29:26.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Homework3_Server.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework3_Server.cpp",
-              "RelativeDocumentMoniker": "Homework3_Server.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework3_Server.cpp",
-              "RelativeToolTip": "Homework3_Server.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-08T08:03:57.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TCPServer.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPServer.cpp",
-              "RelativeDocumentMoniker": "TCPServer.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\TCPServer.cpp",
-              "RelativeToolTip": "TCPServer.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-26T05:33:20.746Z",
+              "WhenOpened": "2025-10-08T12:37:55.032Z",
               "EditorCaption": ""
             }
           ]
