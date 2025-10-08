@@ -1,12 +1,27 @@
 #include "Common.h"
-
+#include <Windows.h>
+#include <string>
+#include <fstream>
 char* SERVERIP = (char*)"192.168.52.1";
 #define SERVERPORT 9000
-#define BUFSIZE    50
+#define BUFSIZE 512
+
+#pragma pack(1)
+struct DataSet {
+	int len = 0;	// 데이터 길이
+	char name[50] = "\0";	// 데이터 파일 이름
+	char buf[BUFSIZE] = "\0";	// 데이터 버퍼
+};
+#pragma pack()
 
 int main(int argc, char* argv[])
 {
-	int retval;
+	int retval = 0;
+
+	if (argc != 3)
+		return 1;
+
+	SERVERIP = argv[1];
 
 	// 윈속 초기화
 	WSADATA wsa;
@@ -26,37 +41,43 @@ int main(int argc, char* argv[])
 	retval = connect(sock, (struct sockaddr*)&serveraddr, sizeof(serveraddr));
 	if (retval == SOCKET_ERROR) err_quit("connect()");
 
-	// argc는 명령행 입력의 개수
-	//argv[0]은 기본적으로 프로그램 실행 파일이므로 , argv[1]부터 실제 입력값
-	if (argc != 2) {
-		WSACleanup();
-		return 0;
-	}
-	FILE* fp = fopen(argv[1], "rb");  // 바이너리 모드로 파일을 열겠다 
+	// 데이터 통신에 사용할 변수
+	DataSet data;
+	std::ifstream in{ argv[2], std::ios::binary };
+	in.seekg(0, std::ios::end);
+	data.len = in.tellg();
+	in.seekg(0, std::ios::beg);
 
-	// 파일 열기 실패
-	if (!fp)
+	char* pFileName = strrchr(argv[2], '\\');
+
+	(pFileName) ? strcpy(data.name, pFileName + 1) : strcpy(data.name, argv[2]);
+
+	retval = send(sock, (char*)&data.len, sizeof(int), 0);
+	if (retval == SOCKET_ERROR) {
+		err_display("send()");
+	}
+
+	retval = send(sock, (char*)&data.name, 50, 0);
+	if (retval == SOCKET_ERROR) {
+		err_display("send()");
+	}
+
+	while (in.read(data.buf, BUFSIZE))
 	{
-		printf("File Read Error\n");
-		WSACleanup();
-		return 0;
-	}
-	
-
-	char buffer[BUFSIZE] = {};
-	while (1)
-	{
-		int readCnt = fread((void*)buffer, 1, BUFSIZE, fp);
-
-		send(sock, (char*)&buffer, readCnt, 0);
-
-		if (readCnt < BUFSIZE) break;
+		retval = send(sock, data.buf, BUFSIZE, 0);
+		if (retval == SOCKET_ERROR) {
+			err_display("send()");
+			break;
+		}
 	}
 
-	shutdown(sock, SD_SEND);
-	recv(sock, (char*)buffer, BUFSIZE, 0);
-	printf("Message from client: %s \n", buffer);
-	fclose(fp);
+	retval = send(sock, data.buf, data.len % BUFSIZE, 0);
+	if (retval == SOCKET_ERROR) {
+		err_display("send()");
+	}
+
+	printf("[TCP 클라이언트] %d+%d바이트를 "
+		"보냈습니다.\n", (int)sizeof(int), data.len);
 
 	// 소켓 닫기
 	closesocket(sock);

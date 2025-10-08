@@ -18,8 +18,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FixedVariable_Server.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "RelativeDocumentMoniker": "FixedVariable_Server.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "RelativeToolTip": "FixedVariable_Server.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-08T12:37:55.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -30,21 +51,7 @@
               "RelativeToolTip": "Practive_4.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-08T12:38:35.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FixedVariable_Server.cpp",
-              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
-              "RelativeDocumentMoniker": "FixedVariable_Server.cpp",
-              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
-              "RelativeToolTip": "FixedVariable_Server.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvxEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-08T12:37:55.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T12:38:35.495Z"
             }
           ]
         }

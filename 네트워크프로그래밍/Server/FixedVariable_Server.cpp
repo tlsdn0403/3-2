@@ -1,7 +1,16 @@
 #include "Common.h"
+#include <fstream>
 
 #define SERVERPORT 9000
-#define BUFSIZE    512
+#define BUFSIZE    256
+
+#pragma pack(1)
+struct DataSet {
+	int len;	// 데이터 길이
+	char name[50];	// 데이터 파일 이름
+	char buf[BUFSIZE];	// 데이터 버퍼
+};
+#pragma pack()
 
 int main(int argc, char* argv[])
 {
@@ -33,8 +42,8 @@ int main(int argc, char* argv[])
 	SOCKET client_sock;
 	struct sockaddr_in clientaddr;
 	int addrlen;
-	int len; // 고정 길이 데이터
-	char buf[BUFSIZE + 1]; // 가변 길이 데이터
+
+	DataSet data;
 
 	while (1) {
 		// accept()
@@ -53,8 +62,7 @@ int main(int argc, char* argv[])
 
 		// 클라이언트와 데이터 통신
 		while (1) {
-			// 데이터 받기(고정 길이)
-			retval = recv(client_sock, (char*)&len, sizeof(int), MSG_WAITALL);
+			retval = recv(client_sock, (char*)&data.len, sizeof(int), MSG_WAITALL);
 			if (retval == SOCKET_ERROR) {
 				err_display("recv()");
 				break;
@@ -62,8 +70,7 @@ int main(int argc, char* argv[])
 			else if (retval == 0)
 				break;
 
-			// 데이터 받기(가변 길이)
-			retval = recv(client_sock, buf, len, MSG_WAITALL);
+			retval = recv(client_sock, data.name, sizeof(data.len), MSG_WAITALL);
 			if (retval == SOCKET_ERROR) {
 				err_display("recv()");
 				break;
@@ -71,11 +78,27 @@ int main(int argc, char* argv[])
 			else if (retval == 0)
 				break;
 
-			// 받은 데이터 출력
-			buf[retval] = '\0';
-			printf("[TCP/%s:%d] %s\n", addr, ntohs(clientaddr.sin_port), buf);
+			std::ofstream out{ data.name, std::ios::binary };
+
+			HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+			CONSOLE_SCREEN_BUFFER_INFO curInfo; // 콘솔 출력창의 정보를 담기 위해서 정의한 구조체
+			GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &curInfo);
+			COORD pos{ curInfo.dwCursorPosition.X, curInfo.dwCursorPosition.Y };
+
+			while (retval)
+			{
+				retval = recv(client_sock, data.buf, BUFSIZE, MSG_WAITALL);
+				if (retval == SOCKET_ERROR) {
+					err_display("recv()");
+					break;
+				}
+				out.write(data.buf, BUFSIZE);
+				printf("전송률: %d%%\n", static_cast<int>(((float)(out.tellp()) / (float)data.len) * (float)100.0f));
+				SetConsoleCursorPosition(handle, pos);
+			}
+			pos.Y += 1;
+			SetConsoleCursorPosition(handle, pos);
 		}
-
 		// 소켓 닫기
 		closesocket(client_sock);
 		printf("[TCP 서버] 클라이언트 종료: IP 주소=%s, 포트 번호=%d\n",
