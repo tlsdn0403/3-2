@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorldWithMessaging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2C3421-3A44-486D-8CB3-24DB1BDC5B87}|WestWorldWithMessaging.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorldWithMessaging\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0E2C3421-3A44-486D-8CB3-24DB1BDC5B87}|WestWorldWithMessaging.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorldWithMessaging\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorldWithMessaging\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-23T06:52:12.552Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -30,3 +30,67 @@
 *.exe
 *.out
 *.app
+
+# C++ & Visual Studio specific
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.cache
+*.vcxproj.user
+*.vcxproj.filters
+*.opensdf
+*.tlog
+*.VC.db
+*.VC.VC.opendb
+
+# CLion & CMake
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Qt Creator
+*.pro.user
+*.qmake.stash
+*.qmake.cache
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Other IDEs and tools
+*.idea/
+*.vscode/
+*.DS_Store
+
+# Backup & temp files
+*~
+*.swp
+*.bak
+*.tmp
+*.temp
+*.log
+
+# C++ generated files
+*.ii
+*.s
+*.su
+*.dSYM/
+
+# Ignore build directories
+/build/
+/bin/
+/debug/
+/release/
+/x64/
+/x86/
+
+# Ignore ipch for Visual Studio
+ipch/
+
+# Ignore c++ standard library build artifacts
+libcxx-build/
+libcxx-install/
+libcxx-test-results/

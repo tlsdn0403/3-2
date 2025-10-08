@@ -188,7 +188,7 @@ void GoHomeAndSleepTilRested::Exit(Miner* pMiner)
 { 
 }
 
-
+// นไ
 bool GoHomeAndSleepTilRested::OnMessage(Miner* pMiner, const Telegram& msg)
 {
    SetTextColor(BACKGROUND_RED|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);

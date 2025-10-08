@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\BaseGameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:BaseGameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Common\\misc\\ConsoleUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\EntityNames.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:EntityNames.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Locations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:Locations.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:Miner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\MinerOwnedStates.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:MinerOwnedStates.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:Miner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2542798-07CE-4068-BFAC-9F40B98D1244}|WestWorld1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseGameEntity.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\BaseGameEntity.h",
+              "RelativeDocumentMoniker": "BaseGameEntity.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\BaseGameEntity.h",
+              "RelativeToolTip": "BaseGameEntity.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:26:44.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleUtils.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Common\\misc\\ConsoleUtils.h",
+              "RelativeDocumentMoniker": "..\\..\\Common\\misc\\ConsoleUtils.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Common\\misc\\ConsoleUtils.h",
+              "RelativeToolTip": "..\\..\\Common\\misc\\ConsoleUtils.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:26:43.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EntityNames.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\EntityNames.h",
+              "RelativeDocumentMoniker": "EntityNames.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\EntityNames.h",
+              "RelativeToolTip": "EntityNames.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:26:42.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Locations.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Locations.h",
+              "RelativeDocumentMoniker": "Locations.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Locations.h",
+              "RelativeToolTip": "Locations.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:26:42.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Miner.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.h",
+              "RelativeDocumentMoniker": "Miner.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.h",
+              "RelativeToolTip": "Miner.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:04:42.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Miner.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.cpp",
+              "RelativeDocumentMoniker": "Miner.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\Miner.cpp",
+              "RelativeToolTip": "Miner.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-23T06:06:55.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MinerOwnedStates.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\MinerOwnedStates.h",
+              "RelativeDocumentMoniker": "MinerOwnedStates.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\MinerOwnedStates.h",
+              "RelativeToolTip": "MinerOwnedStates.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:06:22.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "State.h",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\State.h",
+              "RelativeDocumentMoniker": "State.h",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\State.h",
+              "RelativeToolTip": "State.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T06:04:42.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uC778\uACF5\uC9C0\uB2A5\\Source\\VS2010\\Buckland_Chapter2-State Machines\\WestWorld1\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-23T05:50:48.799Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
