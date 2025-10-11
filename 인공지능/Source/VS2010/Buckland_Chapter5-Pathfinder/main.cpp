@@ -24,7 +24,7 @@
 //
 //------------------------------------------------------------------------
 
-const char* g_szApplicationName = "PathFinder";
+const char* g_szApplicationName = "2021182014_¹Ú½Å¿ì";
 const char*	g_szWindowClassName = "MyWindowClass";
 
 Pathfinder* g_Pathfinder;

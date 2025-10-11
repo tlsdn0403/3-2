@@ -33,131 +33,146 @@ template<class graph_type>
 class Graph_SearchDFS
 {
 private:
+    //to aid legibility
+    enum { visited, unvisited, no_parent_assigned };
 
-  //to aid legibility
-  enum {visited, unvisited, no_parent_assigned};
-
-  //create a typedef for the edge and node types used by the graph
-  typedef typename graph_type::EdgeType Edge;
-  typedef typename graph_type::NodeType Node;
+    //create a typedef for the edge and node types used by the graph
+    typedef typename graph_type::EdgeType Edge;
+    typedef typename graph_type::NodeType Node;
 
 private:
+    //a reference to the graph to be searched
+    const graph_type& m_Graph;
 
-  //a reference to the graph to be searched
-  const graph_type& m_Graph;
+    std::vector<int>  m_Visited;
+    std::vector<int>  m_Route;
+    std::vector<const Edge*>  m_SpanningTree;
+    int               m_iSource, m_iTarget;
+    bool              m_bFound;
 
-  //this records the indexes of all the nodes that are visited as the
-  //search progresses
-  std::vector<int>  m_Visited;
+    bool Search();
+    bool DLS(int depth_limit);
 
-  //this holds the route taken to the target. Given a node index, the value
-  //at that index is the node's parent. ie if the path to the target is
-  //3-8-27, then m_Route[8] will hold 3 and m_Route[27] will hold 8.
-  std::vector<int>  m_Route;
-
-  //As the search progresses, this will hold all the edges the algorithm has
-  //examined. THIS IS NOT NECESSARY FOR THE SEARCH, IT IS HERE PURELY
-  //TO PROVIDE THE USER WITH SOME VISUAL FEEDBACK
-  std::vector<const Edge*>  m_SpanningTree;
-
-  //the source and target node indices
-  int               m_iSource,
-                    m_iTarget;
-
-  //true if a path to the target has been found
-  bool              m_bFound;
-
-
-  //this method performs the DFS search
-  bool Search();
-  
 public:
+    Graph_SearchDFS(const graph_type& graph,
+        int          source,
+        int          target = -1) :
+        m_Graph(graph),
+        m_iSource(source),
+        m_iTarget(target),
+        m_bFound(false),
+        m_Visited(m_Graph.NumNodes(), unvisited),
+        m_Route(m_Graph.NumNodes(), no_parent_assigned)
+    {
+        m_bFound = Search();
+    }
 
-  Graph_SearchDFS(const graph_type& graph,
-                  int          source,
-                  int          target = -1 ):
-  
-                                      m_Graph(graph),
-                                      m_iSource(source),
-                                      m_iTarget(target),
-                                      m_bFound(false),
-                                      m_Visited(m_Graph.NumNodes(), unvisited),
-                                      m_Route(m_Graph.NumNodes(), no_parent_assigned)
-
-  {                                                                         
-    m_bFound = Search(); 
-  }
-
-
-  //returns a vector containing pointers to all the edges the search has examined
-  std::vector<const Edge*> GetSearchTree()const{return m_SpanningTree;}
-
-  //returns true if the target node has been located
-  bool   Found()const{return m_bFound;}
-
-  //returns a vector of node indexes that comprise the shortest path
-  //from the source to the target
-  std::list<int> GetPathToTarget()const;  
+    std::vector<const Edge*> GetSearchTree()const { return m_SpanningTree; }
+    bool  Found()const { return m_bFound; }
+    std::list<int> GetPathToTarget()const;
 };
 
 //-----------------------------------------------------------------------------
+
 template <class graph_type>
 bool Graph_SearchDFS<graph_type>::Search()
 {
-  //create a std stack of edges
-  std::stack<const Edge*> stack;
+    //최대 깊이 = 노드 수 - 1
+    const int max_depth = m_Graph.NumNodes();
 
-  //create a dummy edge and put on the stack
-  Edge Dummy(m_iSource, m_iSource, 0);
-  
-  stack.push(&Dummy);
-
-  //while there are edges in the stack keep searching
-  while (!stack.empty())
-  {
-    //grab the next edge
-    const Edge* Next = stack.top();
-
-    //remove the edge from the stack
-    stack.pop();
-
-    //make a note of the parent of the node this edge points to
-    m_Route[Next->To()] = Next->From();
-
-    //put it on the tree. (making sure the dummy edge is not placed on the tree)
-    if (Next != &Dummy)
+    // 깊이를 0부터 증가
+    for (int depth = 0; depth <= max_depth; ++depth)
     {
-      m_SpanningTree.push_back(Next);
-    }
-   
-    //and mark it visited
-    m_Visited[Next->To()] = visited;
+        // 각 깊이마다 방문 표시와 경로 정보 초기화
+        std::fill(m_Visited.begin(), m_Visited.end(), unvisited);
+        std::fill(m_Route.begin(), m_Route.end(), no_parent_assigned);
+        m_SpanningTree.clear();
 
-    //if the target has been found the method can return success
-    if (Next->To() == m_iTarget)
-    {
-      return true;
+        // 현재 깊이 제한으로 DLS 수행
+        if (DLS(depth))
+            return true;
     }
 
-    //push the edges leading from the node this edge points to onto
-    //the stack (provided the edge does not point to a previously 
-    //visited node)
-    graph_type::ConstEdgeIterator ConstEdgeItr(m_Graph, Next->To());
 
-    for (const Edge* pE=ConstEdgeItr.begin();
-        !ConstEdgeItr.end();
-         pE=ConstEdgeItr.next())
-    {
-      if (m_Visited[pE->To()] == unvisited)
-      {
-        stack.push(pE);
-      }
-    }
-  }
-
-  //no path to target
-  return false;
+    return false;
 }
+
+//-----------------------------------------------------------------------------
+template <class graph_type>
+bool Graph_SearchDFS<graph_type>::DLS(int depth_limit)
+{
+    // 깊이 정보를 함께 저장하는 스택
+    std::stack<std::pair<const Edge*, int>> stack;
+
+    // 더미 엣지 생성
+    Edge Dummy(m_iSource, m_iSource, 0);
+
+    // 초기 깊이 0으로 시작
+    stack.push(std::make_pair(&Dummy, 0));
+
+    // 시작 노드 방문 표시
+    m_Visited[m_iSource] = visited;
+
+    while (!stack.empty())
+    {
+        // 현재 엣지와 깊이 가져오기
+        auto current = stack.top();
+        const Edge* Next = current.first;
+        int current_depth = current.second;
+
+        stack.pop();
+
+        // 부모 노드 정보 기록
+        m_Route[Next->To()] = Next->From();
+
+        // 스패닝 트리에 추가 (더미 엣지는 제외)
+        if (Next != &Dummy)
+        {
+            m_SpanningTree.push_back(Next);
+        }
+
+        // 방문 표시
+        m_Visited[Next->To()] = visited;
+
+        // 목표 노드를 찾았다면 성공 반환
+        if (Next->To() == m_iTarget)
+        {
+            return true;
+        }
+
+        // 현재 깊이가 제한에 도달했다면 더 깊이 탐색하지 않음
+        if (current_depth >= depth_limit)
+        {
+            continue;
+        }
+
+        // 인접 노드 탐색용
+        std::vector<const Edge*> edges;
+
+        // 인접 엣지 수집
+        graph_type::ConstEdgeIterator ConstEdgeItr(m_Graph, Next->To());
+        for (const Edge* pE = ConstEdgeItr.begin();
+            !ConstEdgeItr.end();
+            pE = ConstEdgeItr.next())
+        {
+            if (m_Visited[pE->To()] == unvisited)
+            {
+                edges.push_back(pE);
+            }
+        }
+
+        // 순수 IDDFS에서는 정렬 없이 단순히 인접 노드를 스택에 추가
+        // 스택은 LIFO이므로, 원하는 방향 우선순위가 있다면 적절한 순서로 추가
+        for (auto it = edges.rbegin(); it != edges.rend(); ++it)
+        {
+            m_Visited[(*it)->To()] = visited;
+            stack.push(std::make_pair(*it, current_depth + 1));
+        }
+    }
+
+    return false;
+}
+
 
 //-----------------------------------------------------------------------------
 template <class graph_type>

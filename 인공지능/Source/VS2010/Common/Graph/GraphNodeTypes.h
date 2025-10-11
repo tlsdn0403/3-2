@@ -54,7 +54,7 @@ public:
 //  if you want your nodes to represent health packs, gold mines and the like
 //-----------------------------------------------------------------------------
 template <class extra_info = void*>
-class NavGraphNode : public GraphNode
+class NavGraphNode : public GraphNode //2d 위치값 추가됨
 {
 protected:
 

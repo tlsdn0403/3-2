@@ -21,11 +21,11 @@ class GraphEdge
 protected:
 
   //An edge connects two nodes. Valid node indices are always positive.
-  int     m_iFrom;
+  int     m_iFrom; //ÀÎµ¦½º
   int     m_iTo;
 
   //the cost of traversing the edge
-  double  m_dCost;
+  double  m_dCost; //¿§ÁöÀÇ ºñ¿ë
 
 public:
 

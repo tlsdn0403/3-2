@@ -34,9 +34,9 @@ public:
   
   //a couple more typedefs to save my fingers and to help with the formatting
   //of the code on the printed page
-  typedef std::vector<node_type>   NodeVector;
-  typedef std::list<edge_type>     EdgeList;
-  typedef std::vector<EdgeList>    EdgeListVector;
+  typedef std::vector<node_type>   NodeVector; //노드들을 벡터로 관리
+  typedef std::list<edge_type>     EdgeList;   // 엣지는 2단계로 관리 리스트와 벡터 
+  typedef std::vector<EdgeList>    EdgeListVector; // 강의 자료에 있는 그림이 이것
 
  
 private:
