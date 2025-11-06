@@ -3,6 +3,9 @@
 #include <string>
 #include <fstream>
 
+
+
+
 char* SERVERIP = (char*)"127.0.0.1";
 #define SERVERPORT 9000
 #define BUFSIZE 512
@@ -39,7 +42,7 @@ int main(int argc, char* argv[])
 	serveraddr.sin_family = AF_INET;
 	inet_pton(AF_INET, SERVERIP, &serveraddr.sin_addr);
 	serveraddr.sin_port = htons(SERVERPORT);
-	retval = connect(sock, (struct sockaddr*)&serveraddr, sizeof(serveraddr));
+	retval = connect(sock, (struct sockaddr*)&serveraddr, sizeof(serveraddr)); //서버와 논리적 연결 , 서버 bind 역할도 한다.
 	if (retval == SOCKET_ERROR) err_quit("connect()");
 
 	// 데이터 통신에 사용할 변수

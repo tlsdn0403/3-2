@@ -23,11 +23,11 @@ CRITICAL_SECTION cs;
 
 // 클라이언트와 데이터 통신
 //스레드 함수
-DWORD WINAPI ProcessClient(LPVOID lpParameter)
+DWORD WINAPI ProcessClient(LPVOID arg)
 {
 	Params params;
-	params.client_sock = ((Params*)lpParameter)->client_sock;
-	params.curpos = ((Params*)lpParameter)->curpos;
+	params.client_sock = ((Params*)arg)->client_sock;
+	params.curpos = ((Params*)arg)->curpos;
 	params.curpos.Y += 1;
 	int retval;
 	struct sockaddr_in clientaddr;
@@ -37,7 +37,7 @@ DWORD WINAPI ProcessClient(LPVOID lpParameter)
 
 	// 클라이언트 정보 얻기
 	addrlen = sizeof(clientaddr);
-	getpeername(params.client_sock, (struct sockaddr*)&clientaddr, &addrlen);
+	getpeername(params.client_sock, (struct sockaddr*)&clientaddr, &addrlen);  //스레드에서 클라이언트 정보를 출력 가능하게 해줌
 	inet_ntop(AF_INET, &clientaddr.sin_addr, addr, sizeof(addr));
 
 	// 클라이언트와 데이터 통신
@@ -110,11 +110,11 @@ int main(int argc, char* argv[])
 	serveraddr.sin_family = AF_INET;
 	serveraddr.sin_addr.s_addr = htonl(INADDR_ANY);  //INADDR_ANY: 모든 IP주소를 나타내는 상수 ,호스트 바이트 -> 네트워크 바이트 long 32bit
 	serveraddr.sin_port = htons(SERVERPORT);         //포트 번호를 네트워크 바이트 순서로 변환  short 16bit
-	retval = bind(listen_sock, (struct sockaddr*)&serveraddr, sizeof(serveraddr));
+	retval = bind(listen_sock, (struct sockaddr*)&serveraddr, sizeof(serveraddr));  //지역 ip , 포트번호 
 	if (retval == SOCKET_ERROR) err_quit("bind()");
 
 	// listen()
-	retval = listen(listen_sock, SOMAXCONN);
+	retval = listen(listen_sock, SOMAXCONN);  //소켓 상태를 listen으로 변경
 	if (retval == SOCKET_ERROR) err_quit("listen()");
 
 	// 데이터 통신에 사용할 변수
@@ -129,7 +129,7 @@ int main(int argc, char* argv[])
 	InitializeCriticalSection(&cs);  //임계영역 사용하기전에 초기화 하기위해 호출
 
 	while (1) {
-		// accept()
+		// accept() 클라이언트 접속을 수용하고 접손한 클라이어트와 통신할 수 있는 소켓을 생성하여 리턴
 		Params clientParams;
 		addrlen = sizeof(clientaddr);
 		clientParams.client_sock = accept(listen_sock, (struct sockaddr*)&clientaddr, &addrlen);
@@ -152,7 +152,7 @@ int main(int argc, char* argv[])
 		clientParams.curpos = globalCurpos;
 
 		// 스레드 생성
-		hThread = CreateThread(NULL, 0, ProcessClient, (LPVOID)&clientParams, 0, NULL);  //스레드 핸들을 리턴함
+		hThread = CreateThread(NULL, 0, &ProcessClient, (LPVOID)&clientParams, 0, NULL);  //스레드 핸들을 리턴함
 		if (hThread == NULL) { closesocket(clientParams.client_sock); }
 		else { CloseHandle(hThread); }
 	}
