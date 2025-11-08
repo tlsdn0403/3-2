@@ -93,7 +93,7 @@ INT_PTR CALLBACK DlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		case WM_INITDIALOG:
 			hEdit1 = GetDlgItem(hDlg, IDC_EDIT1);
 			hSelectButton = GetDlgItem(hDlg, IDSELECT);
-			hProgress = GetDlgItem(hDlg, IDC_PROGRESS1); // 프로그레스 바 핸들 얻기
+		
 
 			// 프로그레스 바의 범위를 0에서 100으로 설정
 			SendMessage(hProgress, PBM_SETRANGE, 0, MAKELPARAM(0, 100));
