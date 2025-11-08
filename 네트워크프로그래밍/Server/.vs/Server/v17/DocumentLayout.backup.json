@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\",
+  "WorkspaceRootPath": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:Homework4_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8CCBE838-9472-433F-8743-8F7DE7883396}|Server.vcxproj|solutionrelative:FixedVariable_Server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -18,21 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Homework4_Server.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp",
               "RelativeDocumentMoniker": "Homework4_Server.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\Homework4_Server.cpp",
               "RelativeToolTip": "Homework4_Server.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAJUAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-11T07:40:57.928Z",
               "EditorCaption": ""
@@ -41,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FixedVariable_Server.cpp",
-              "DocumentMoniker": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
               "RelativeDocumentMoniker": "FixedVariable_Server.cpp",
-              "ToolTip": "C:\\Users\\tlsdn\\Desktop\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Server\\FixedVariable_Server.cpp",
               "RelativeToolTip": "FixedVariable_Server.cpp",
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAHIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

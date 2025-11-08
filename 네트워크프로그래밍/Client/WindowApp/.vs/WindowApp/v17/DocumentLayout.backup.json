@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{122EEEB0-2E60-48E4-BC19-8954DDDD14D7}|7_1_Client\\7_1_Client.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\7_1_Client\\7_1_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{122EEEB0-2E60-48E4-BC19-8954DDDD14D7}|7_1_Client\\7_1_Client.vcxproj|solutionrelative:7_1_Client\\7_1_Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63B38442-A66D-4825-AB9F-33D9272B9727}|GUITCPClient\\GUITCPClient.vcxproj|D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\GUITCPClient\\GUITCPClient.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0085 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{63B38442-A66D-4825-AB9F-33D9272B9727}|GUITCPClient\\GUITCPClient.vcxproj|solutionrelative:GUITCPClient\\GUITCPClient.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0085 2$  \u0022     "
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GUITCPClient.rc - IDD_DIALOG1 - Dialog",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\GUITCPClient\\GUITCPClient.rc",
+              "RelativeDocumentMoniker": "GUITCPClient\\GUITCPClient.rc",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\GUITCPClient\\GUITCPClient.rc - IDD_DIALOG1 - Dialog",
+              "RelativeToolTip": "GUITCPClient\\GUITCPClient.rc - IDD_DIALOG1 - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-11-08T17:06:34.665Z",
+              "EditorCaption": " - IDD_DIALOG1 - Dialog"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "7_1_Client.cpp",
+              "DocumentMoniker": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\7_1_Client\\7_1_Client.cpp",
+              "RelativeDocumentMoniker": "7_1_Client\\7_1_Client.cpp",
+              "ToolTip": "D:\\3-2\\\uB124\uD2B8\uC6CC\uD06C\uD504\uB85C\uADF8\uB798\uBC0D\\Client\\WindowApp\\7_1_Client\\7_1_Client.cpp",
+              "RelativeToolTip": "7_1_Client\\7_1_Client.cpp",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAwLUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-08T16:19:16.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
