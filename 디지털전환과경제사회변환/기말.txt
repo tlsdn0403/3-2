@@ -1,20 +1,27 @@
-Market power 시장규모랬나 아무튼
+Market power 시장 지배력 
+개인이나 기업이 가격을 시장가보다 높게 유지할 수 있는 힘
 
 빅테크 기업
 독점 monopoly
 디지털 격차 중요한 용어래요
 
-캅3 교토 의정서 중요하다??
+캅3 교토 의정서 중요하다?? -> 기후 변화에 대응하기 위한 국제 협약
+
 개인정보 보호 보면 쉽지만 중요하다. 어떤식으로도 시험에 나온다 (10장)
+적법성, 공정성및투명성 , 목적 제한
+개인정보는법률에따라적법하고공정하게수집되어야하며, 개인에게 그 수집목적과 처리방법이 명확하게 알려져야 함
 직접식별변호 , 간접 식별 번호
 개인정보 원칙 적법해야한다
 
+랜섬웨어(Ransomware): 인질의몸값(Ransom)과 Software의 합성어로 악성 소프트웨어의 일종으로 , 사용자의 데이터나 시스템 접근을 차단하고 이를 위해 금전을 요구하는 것
 
 gpu cpu tpu? 
 
 인공지능의 책임감 있고 공정한 사용을 규율하는 원칙과 지침. 이거 한줄은 알고 있자
 
 디지털 리터러시
+
+인공지능 윤리 : ai ethics 인공지능의 책임감 있고 공정한 사용을 규율하는 원칙과 지침
 
 스캠(Scam) : 신용사기를 뜻하는 용어 , 도박판에서도 상대방을 속이는 행위를 뜻함
 
@@ -32,6 +39,104 @@ HBM: 기존 DRAM 대비 데이터 처리 속도를 혁신적으로 높인 차세
 
 디지털 인프라 취약성(Digital Infrastructure Vulnerability): ICT·네트워크·데이터 저장소 등 디지털 기반시설이 공격·오류·노후화로 손상될 가능성.
 
-개인 정보  : 개인의특성, 행동, 의견 등을 포함하여 개인의 사생활과 관련된 모든 정보
+개인 정보(Personal Data)  : 개인의특성, 행동, 의견 등을 포함하여 개인의 사생활과 관련된 모든 정보
 직접 식별 정보 : 이름 주민등럭번호 , 전화번호
 간접 식별 정보 : IP 주소 , 쿠키 데이터 , 위치 정보
+
+
+알고리즘편향성(Algorithmic Bias) : 알고리즘이 특정 집단이나 개인에게 불리하게 작용하도록 설계되거나 훈련되는 경우를 말함
+
+인공지능(Artificial Intelligence) 
+
+ Artificial General Intelligence : 강인공지능으로 , 특정 작업이나 문제 해결에 국한되지 않은 인간과 유사한 지능을 가진 인공지능 시스템
+
+해킹 : 컴퓨터 시스템이나 네트워크의 비인가 접근
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+디지털 정보 격차 → (영어로) 정답: Digital Divide
+
+Digital Literacy → (한글로) 정답: 디지털 리터러시
+
+접근격차 → (영어로) 정답: Access Divide
+
+Usage Divide → (한글로) 정답: 사용격차
+
+Outcome Divide → (한글로) 정답: 활용격차
+
+포용성 → (영어로) 정답: Inclusion
+
+Digital Inclusion → (한글로) 정답: 디지털 포용성
+
+인프라 → (영어로) 정답: Infrastructure
+
+저소득층 → (영어로) 정답: Low-income group
+
+World Economic Forum → (한글로) 정답: 세계경제포럼
+
+
+
+
+Digital Transformation → 기업과 사회가 디지털 기술을 활용해 구조와 운영을 혁신하는 과정.
+
+Big Tech Company → 구글, 애플, 아마존, 메타, 마이크로소프트 등 글로벌 ICT 대기업.
+
+Cyber Attack → 네트워크·시스템을 대상으로 한 불법적 침입·파괴 행위.
+
+Ransomware → 데이터를 암호화해 인질로 잡고 금전을 요구하는 악성 소프트웨어.
+
+Phishing → 가짜 이메일·사이트로 개인정보를 탈취하는 공격 방식.
+
+Algorithmic Bias → 데이터·알고리즘 설계 편향으로 특정 집단에 불리한 결과를 초래하는 문제.
+
+Technical Debt 기술 부채 → 구식 기술·코드 유지로 인해 성능 저하와 비용 증가를 초래하는 문제.
+
+Digital Literacy → 디지털 기술을 이해·활용·표현할 수 있는 능력.
+
+Digital Divide → ICT 접근·사용·활용의 차이로 발생하는 사회적 격차.
+
+Access Divide → 인터넷·기기 접근 여부에 따른 격차.
+
+Usage Divide → 디지털 기술 사용 능력·빈도에서 발생하는 격차.
+
+Outcome Divide → 디지털 활용으로 얻는 교육·경제·사회적 혜택의 차이.
+
+Digital Inclusion → 모든 사람이 공평하게 디지털 기술·서비스를 활용할 수 있는 상태.
+
+AGI (Artificial General Intelligence) → 인간 수준의 범용적 사고·학습 능력을 가진 인공지능.
+
+ANI (Artificial Narrow Intelligence) → 특정 분야에 특화된 현재 단계의 인공지능.
+
+ASI (Artificial Super Intelligence) → 인간 능력을 초월하는 가상의 초지능.
+
+AMR (Autonomous Mobile Robot) → 스스로 이동·작업을 수행하는 자율형 로봇.
+
+Cobots (협동로봇) → 인간과 함께 작업하며 안전성을 갖춘 로봇.
+
+Soft Robotics → 유연한 소재를 활용해 섬세한 작업을 수행하는 로봇 기술.
+
+GDPR (General Data Protection Regulation) → EU의 개인정보 보호 및 데이터 권리 보장 법규.
